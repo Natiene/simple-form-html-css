@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="form.css">
+    <link rel="icon" type="image/x-icon" href="laptop-code-solid.svg">
+    <title>Register</title>
+</head>
+
+<body>
+    <div id="container">
+        <div id="formContainer">
+            <div class="field">
+                <h1 id="title">Rigister of Dev</h1>
+                <p id="subtitle">Complete your information</p>
+                <br>
+            </div>
+
+            <form>
+                <fieldset class="group">
+                    <div class="field">
+                        <label for="name"><strong>Name</strong></label>
+                        <input type="text" name="name" id="name" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="lastName"><strong>Surname</strong></label>
+                        <input type="text" name="Surname" id="Surname" required>
+                    </div>
+                </fieldset>
+
+                <div class="field">
+                    <label for="email"><strong>Email</strong></label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+
+                <div class="field">
+                    <label><strong>What is your area?</strong></label>
+                    <label>
+                        <input type="radio" name="devWeb" value="Frontend" checked>Frontend
+                    </label>
+                    <label>
+                        <input type="radio" name="devWeb" value="Backend">Backend
+                    </label>
+                    <label>
+                        <input type="radio" name="devWeb" value="Mobile">Mobile
+                    </label>
+                </div>
+
+                <div class="field">
+                    <label for="level"><strong>Seniority Level</strong></label>
+                    <select id="level" required>
+                        <option selected disabled value="">Select</option>
+                        <option>Junior</option>
+                        <option>Mid</option>
+                        <option>Senior</option>
+                    </select>
+                </div>
+
+                <fieldset class="group">
+                    <label><strong>Select the technologies you use:</strong></label><br><br>
+                    <div id="checkbox">
+                        <input type="checkbox" id="tech1" name="tech1" value="HTML">
+                        <label for="tech1">HTML</label>
+                        <input type="checkbox" id="tech2" name="tech1" value="JavaScript">
+                        <label for="tech2">JavaScript</label>
+                        <input type="checkbox" id="tech3" name="tech1" value="ReactJs">
+                        <label for="tech3">ReactJs</label>
+                        <input type="checkbox" id="tech4" name="tech1" value="Node">
+                        <label for="tech4">Node</label>
+                        <input type="checkbox" id="tech5" name="tech1" value="Redux">
+                        <label for="tech5">Redux</label>
+                        <input type="checkbox" id="tech6" name="tech1" value="Java">
+                        <label for="tech6">Java</label>
+                        <input type="checkbox" id="tech7" name="tech1" value="Flutter">
+                        <label for="tech7">Flutter</label>
+                    </div>
+                </fieldset>
+
+                <div class="field">
+                    <br>
+                    <label><strong>Talk about your experience:</strong></label>
+                    <textarea rows="6" style="width: 97%" id="experience" name="experience"></textarea>
+                </div>
+                <div id="btnContainer">
+                    <button type="submit" class="btn">Sent</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
